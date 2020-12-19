@@ -2,10 +2,12 @@
 function contacts() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
+
 function menu() {
   document.getElementById("menuDropdown").classList.toggle("menuShow");
 }
-window.onclick = function(event) {
+
+window.onclick = function (event) {
   if (!event.target.matches('.dropbtn')) {
     let dropdowns = document.getElementsByClassName("dropdown-content");
     let i;
@@ -30,6 +32,8 @@ window.onclick = function(event) {
   
 document.getElementById("defaultOpen").click();
 
+////////////////////////////////////////////////////////////////////
+
 function changeTab(evt, tabName) {
   let i, workersInfobox, tablinks;
 
@@ -43,6 +47,29 @@ function changeTab(evt, tabName) {
       tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
 
+  document.getElementById(tabName).style.display = "flex";
+
+  evt.currentTarget.className += " active";
+}
+
+///////////////////////////////////////////////////////////////////
+
+function register(){
+    document.getElementById("registartionStartButton").click();
+}
+
+function changeTabForLogin(evt, tabName) { 
+  let i, wholeregistration;
+
+  wholeregistration = document.getElementsByClassName("wholeregistration");
+  for (i = 0; i < wholeregistration.length; i++) {
+    wholeregistration[i].style.display = "none";
+  }
+    logTablinks = document.getElementsByClassName("logTablinks");
+  for (i = 0; i < logTablinks.length; i++) {
+      logTablinks[i].className = logTablinks[i].className.replace(" active", "");
+  }
+    
   document.getElementById(tabName).style.display = "flex";
 
   evt.currentTarget.className += " active";

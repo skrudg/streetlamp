@@ -10,40 +10,58 @@
     <title>Главная</title>
 </head>
 <body>
-    <div class="header all_center">
-
-        <div class="header__logobox all_center">
-            <a href="index.html" class="logoWord all_center">
-                Street lamp
-            </a>
-        </div>
-
-        <div class="menuButtonBox">
-            <img onclick="menu()" class="navlink menuButton" src="photo/menu.png" alt="">
-        </div>
-
-        <div id="menuDropdown" class="header__navBar all_center">
-            <a href="index.html" class="navlink" style="color: rgb(70, 163, 226);">ГЛАВНАЯ</a> |
-            <a href="#whatWeDo" onclick="changeTab(event, 'whatWeDo')" class="navlink">УСЛУГИ</a> |
-            <a href="#whoWeAre" onclick="changeTab(event, 'whoWeAre')" class="navlink">КОМАНДА</a> | 
-            <a href="perehodnik.html" class="navlink">СОТРУДНИКАМ</a>
-        </div>
+    <div class="header">
+        <!-- <div class="videoBox">
+            <video class="videoBox__video" autoplay muted loop src="video/it.mp4"></video>
+        </div> -->
+        <div class="contactbar">
+            <div class="contactbar_leftbox">
+                <a class="logo" href="tel:+996222145423"><img src="../photo/photo_tel.png" alt="tel">+996222145423</a>
+                <a class="logo" href="skrudg.kg@gmail.com"><img src="../photo/photo_email.png"
+                        alt="email">skrudg.kg@gmail.com</a>
+            </div>
+            <div class="contactbar_rightbox">
+                <a class="contactbar_support" href="#">support</a>
+                <a class="contactbar_faq" href="#">FAQ</a>
+                <a class="contactbar_search logo" href="#"><img src="../photo/photo_search.png" alt="seacrh"></a>
+                <a class="contactbar_faq" href="#">lang</a>
+            </div>
         
-        <div class="header__dropdownBox all_center">
-            <a href="#" class="navlink dropbtn" onclick="contacts()">СВЯЗАТЬСЯ</a>
-            <div id="myDropdown" class="dropdown-content">
-                <a href="https://api.whatsapp.com/send?phone=996706626203" id="callWhatsapp" class="navlink">whatsapp</a>
-                <a href="https://t.me/IT_git" id="callTelegram" class="navlink">telegram</a>
-                <a href="#" id="callPhone" class="navlink">позвонить</a>
+        </div>
+        <div class="menubar">
+            <div class="menubar__logobox all_center">
+                <a href="index.html" class="logoWord all_center">
+                    Street lamp
+                </a>
+            </div>
+            
+            <div class="menuButtonBox">
+                <img onclick="menu()" class="navlink menuButton" src="photo/menu.png" alt="">
+            </div>
+            
+            <div id="menuDropdown" class="header__navBar all_center">
+                <a href="index.html" class="navlink" style="color: rgb(70, 163, 226);">ГЛАВНАЯ</a> |
+                <a href="#whatWeDo" onclick="changeTab(event, 'whatWeDo')" class="navlink">УСЛУГИ</a> |
+                <a href="#whoWeAre" onclick="changeTab(event, 'whoWeAre')" class="navlink">КОМАНДА</a> |
+                <a href="perehodnik.html" class="navlink">СОТРУДНИКАМ</a>
+            </div>
+            
+            <div class="menubar__dropdownBox all_center">
+                <a href="#" class="navlink dropbtn" onclick="contacts()">СВЯЗАТЬСЯ</a>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="https://api.whatsapp.com/send?phone=996706626203" id="callWhatsapp" class="navlink">whatsapp</a>
+                    <a href="https://t.me/IT_git" id="callTelegram" class="navlink">telegram</a>
+                    <a href="#" id="callPhone" class="navlink">позвонить</a>
+                </div>
             </div>
         </div>
+        
     </div>
     <div class="body all_center">
-
-        <div class="videoBox">
-            <video class="videoBox__video"  autoplay muted loop src="video/it.mp4"></video>
-        </div>
         
+        <div class="videoBox">
+            <video class="videoBox__video" autoplay muted loop src="video/it.mp4"></video>
+        </div>
 
         <div class="aboutWorkerBox all_center">
 
